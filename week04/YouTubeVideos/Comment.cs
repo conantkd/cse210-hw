@@ -1,11 +1,14 @@
 class Comment
 {
-    public string UserName { get; }
-    public string Text { get; }
+    private string _userName;
+    private string _text;
+
+    public string UserName { get { return _userName; } }
+    public string Text { get { return _text; } }
 
     public Comment(string userName, string text)
     {
-        UserName = userName;
-        Text = text;
+        _userName = userName;
+        _text = text;
     }
 }
